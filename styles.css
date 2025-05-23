@@ -1,0 +1,135 @@
+html, body{
+   height: 100%;
+   font-family: monospace;
+   margin: 0;
+   padding: 0;
+}
+
+.loading{
+   border: 6px solid #f3f3f3;
+   border-top: 6px solid #3498db;
+   border-radius: 50%;
+   width: 40px;
+   height: 40px;
+   margin: 20px auto;
+   animation: spin 5s linear infinite;
+   display: none;
+}
+
+@keyframes spin{
+   0% {transform: rotate(0deg);}
+   100% {transform: rotate(360deg);}
+}
+
+.container{
+   min-height: 90%;
+   margin: 20px;
+}
+
+.header{
+   padding: 20px;
+   justify-content: center;
+   display: flex;
+}
+
+#icon{
+   padding-left: 10px;
+   padding-top: 35px;
+   cursor: pointer;
+}
+
+.yt{
+   color: red;
+}
+
+.ms{
+   color: gold;
+}
+
+.dl{
+   color:dodgerblue;
+}
+
+.input{
+   text-align: center;
+   margin-top: -20px;
+}
+
+input, button{
+   transition: all 0.3s ease;
+}
+
+input{
+   box-shadow: 6px 8px 10px #d9d9d9;
+   width: 200px;
+   height: 20px;
+   text-align: center;
+   font-family: monospace;
+   border-radius: 5px;
+}
+
+button{
+   box-shadow: 6px 8px 10px #d9d9d9;
+   background-color: dodgerblue;
+   margin: 10px auto;
+   padding: 0 10px;
+   height: 25px;
+   border-radius: 5px;
+   color:azure;
+   font-family: monospace;
+   cursor: pointer;
+}
+
+.result{
+   margin: 20px;
+   border-radius: 20px;
+   box-shadow: 6px 8px 10px #d9d9d9;
+}
+
+.img{
+   text-align: center;
+}
+
+.img img{
+   width: 200px;
+   padding-top: 20px;
+}
+.content{
+   padding: 10px 20px;
+}
+
+.dnld{
+   text-align: center;
+}
+
+html[data-bs-theme="dark"]{
+   background: #0c0c0c;
+}
+
+html[data-bs-theme="dark"] .result{
+   background-color: #1a1d22;
+   box-shadow: 2px 5px 8px rgba(0,255,255,0.3);
+   color:antiquewhite;
+}
+html[data-bs-theme="dark"] input,
+html[data-bs-theme="dark"] button{
+   box-shadow: 2px 5px 8px rgba(0,255,255,0.3);
+}
+
+html[data-bs-theme="dark"] i,
+html[data-bs-theme="dark"] footer{
+   color: #ffffff;
+}
+
+footer{
+   left: 50%;
+   position: fixed;
+   bottom: 0;
+   text-align: center;
+   transform: translateX(-50%);
+   padding: 10px 0;
+}
+
+h4{
+   font-size: 1.7rem;
+}
