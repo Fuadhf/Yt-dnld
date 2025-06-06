@@ -1,0 +1,9 @@
+{
+    "editor.fontSize": 15,
+    "terminal.integrated.fontSize": 12,
+    "window.zoomLevel": 0.8,
+    "editor.tabSize": 3,
+    "workbench.colorTheme":"One Dark Pro Darker",
+    "workbench.iconTheme": "material-icon-theme",
+    "editor.wordWrap": "on",
+}
