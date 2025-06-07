@@ -21,12 +21,13 @@ btnSearch.addEventListener('click', function() {
    result.innerHTML = ''
    loading.style.display = 'block'
    
-   fetch('https://api.ryzumi.vip/api/downloader/ytmp3/?url=' + inputUrl.value)
+   fetch('https://ytdlpyton.nvlgroup.my.id/download/audio?url=' + inputUrl.value)
    .then(response => {
       if(!response.ok){
          loading.style.display = 'none'
          throw new Error(response.statusText)
       } 
+      console.log(response)
       return response.json()
    })
    .then((yt) => {
@@ -59,13 +60,9 @@ function showResult(yt) {
             </div>
             <div class="content">
                <h4>${yt.title}</h4>
-               <p>Duration : ${Math.floor(yt.lengthSeconds / 60)} menit</p>
-               <p>Channel : ${yt.author}</p>
-               <p>Views : ${yt.views}</p>
-               <p>Upload date : ${yt.uploadDate}</p>
-               <p>Quality : ${yt.quality}</p>
+               <p>${yt.message}</p>
                <div class="dnld">
-                  <button type="button" class="download" data-url="${yt.url}">Download</button>
+                  <button type="button" class="download" data-url="${yt.download_url}">Download</button>
                </div>
             </div>`
 }

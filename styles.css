@@ -34,7 +34,7 @@ html, body{
 
 #icon{
    padding-left: 10px;
-   padding-top: 30px;
+   padding-top: 25px;
    cursor: pointer;
 }
 
@@ -70,7 +70,7 @@ input{
 
 button{
    box-shadow: 6px 8px 10px #d9d9d9;
-   background-color: dodgerblue;
+   background-color:royalblue;
    margin: 10px auto;
    padding: 0 10px;
    height: 25px;
@@ -96,6 +96,10 @@ button{
 }
 .content{
    padding: 10px 20px;
+   text-align: center;
+}
+.content p {
+   font-size: medium;
 }
 
 .dnld{
@@ -103,22 +107,23 @@ button{
 }
 
 html[data-bs-theme="dark"]{
-   background: #0c0c0c;
+   background: #171717;
 }
 
 html[data-bs-theme="dark"] .result{
-   background-color: #1a1d22;
-   box-shadow: 2px 5px 8px rgba(0,255,255,0.3);
-   color:antiquewhite;
+   background-color: #191c21;
+   box-shadow: 3px 5px 8px rgba(0,255,255,0.3);
+   color: #9f9f9f;
 }
 html[data-bs-theme="dark"] input,
 html[data-bs-theme="dark"] button{
-   box-shadow: 2px 5px 8px rgba(0,255,255,0.3);
+   box-shadow: 3px 5px 8px rgba(0,255,255,0.3);
+   color:ghostwhite;
 }
 
 html[data-bs-theme="dark"] i,
 html[data-bs-theme="dark"] footer{
-   color: #ffffff;
+   color: #9f9f9f;
 }
 
 footer{
@@ -131,5 +136,5 @@ footer{
 }
 
 h4{
-   font-size: 1.5rem;
+   font-size: 1.3rem;
 }
